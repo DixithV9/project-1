@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: gainsboro;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            width: 100%;
+        }
+        .plans{
+            padding:30px;
+            text-align: center;
+        }
+        .special{
+            color: red;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            margin-top: -100px;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            color: black;
+            text-align: center;
+            margin-bottom: 2%;
+            
+        }
+.card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+justify-content: center;
+gap: 30px;
+flex-direction: column;
+}
+.card-header{
+    margin-bottom: 20px;
+    background: #fff;
+    color: black;
+    width:300px ;
+    padding: 30px;
+    border-radius: 10px;
+    height: 400px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+}
+h4{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.card-header ul{
+    list-style-type: none;
+    text-align: left;
+    font: 20px;
+    border-top: 1px solid rgba(9, 9, 9, 0.8);
+}
+.card-header ul li{
+    color: black;
+    padding: 10px;
+}
+.btn{
+    color: black;
+    background-color: red;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(130deg,red,red);
+}
+.btn:hover{
+    background: linear-gradient(130deg, red ,rgb(150, 176, 22));
+    transform: translateX(-8px);
+}
+ 
+
+    </style>
+</head>
+<body>
+   <section class="plans">
+    <span class="special">___Our Plans</span>
+    <h2>Event Pricing</h2>
+    <div class="card">
+        <div class="card-header">
+            <h3>Kids</h3>
+            <h4>$35</h4>
+        
+        <ul>
+            <li>✔️Visiting Santa</li>
+            <li>✔️Dining</li>
+            <li>✔️Ice Skating</li>
+            <li>✔️Christmas Tree</li>
+        </ul>
+        <button class="btn">Book Now</button>
+        </div>
+        <div class="card-header">
+            <h3>Adult</h3>
+            <h4>$49</h4>
+        
+        <ul>
+            <li>✔️Ice Zone</li>
+            <li>✔️Christmas Shopping</li>
+            <li>✔️Workshops</li>
+            <li>✔️Live Music</li>
+        </ul>
+        <button class="btn">Book Now</button>
+        </div>
+        <div class="card-header">
+            <h3>Family</h3>
+            <h4>$99</h4>
+        
+        <ul>
+            <li>✔️Chat with Santa</li>
+            <li>✔️Christmas Decorations</li>
+            <li>✔️Ice Carvers</li>
+            <li>✔️Raffle</li>
+        </ul>
+        <button class="btn">Book Now</button>
+        </div>
+    </div>
+   </section>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

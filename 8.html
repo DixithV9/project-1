@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+           background:linear-gradient(100deg,lightgreen,white)
+            
+        }
+        footer{
+            background:linear-gradient(100deg,lightgreen,white);
+            color: black;
+            padding: 60px 40px 20px;
+        }
+        .footer-container{
+            display: flex;
+            gap: 40px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-box{
+            padding: 10px;
+            min-width: 300px;
+
+        }
+        .logo{
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: rgb(252, 251, 250);
+            padding: 10px;
+
+        }
+        .logo span{
+            color: aliceblue;
+            font-size: 29px;
+        }
+        
+        .footer-box p{
+            font-size: 18px;
+            line-height: 1.5;
+            color: black;
+            width: 300px;
+        }
+        .terms{
+            list-style-type: none;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            color: black;
+        }
+        
+        .privacy{
+            list-style-type: none;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            color: black;
+        }
+        .footer-box h3{
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .email{
+            margin-bottom: 10px;
+        }
+        .social-icons{
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .social-icons i{
+            background: #bec2be;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .newsletter{
+            display: flex;
+            margin-top: 15px;
+            flex-direction: column;
+        }
+        .newsletter button{
+            background: rgb(233, 68, 3);
+            padding: 16px 28px;
+            color: rgb(250, 250, 250);
+            border: none;
+            cursor: pointer;
+            font-weight: 100;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .newsletter input{
+            padding: 20px;
+            border-radius: 10px;
+            
+            
+        }
+        .footer-bottom{
+            border-top: 1px solid rgba(9, 9, 9, 0.2);
+            margin-top: 50px;
+            padding-top: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .footer-bottom p{
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2 class="logo">Chris<span>Max</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur tenetur, blanditiis nobis tempora molestiae optio aliquid at consequatur repellendus alias molestias ad laudantium adipisci saepe, esse odio soluta, illo voluptatum.</p>
+                <a href="#" class="terms">Terms and conditions</a>
+                <a href="#" class="privacy">Privacy Policy</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact Details</h3>
+                <p>Email:</p>
+                <p class="email">info@example.com</p>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Join Our Newsletter</h3>
+                <p>Sign up to receive our Newsletter</p>
+                <div class="newsletter">
+                    <p>Email*</p>
+                    <input type="email" placeholder="Your Email"><br>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2025 Chrismax.All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

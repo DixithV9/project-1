@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: rgb(248, 246, 246);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .event{
+            padding:30px;
+            text-align: center;
+        }
+        
+.subtitle{
+             color: red;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 12px;
+}
+h2{
+     font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            color: black;
+            text-align: center;
+            margin-bottom: 2%;
+}
+.btn1{
+    color: black;
+    background-color: rgb(148, 148, 148);
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.btn2{
+    color: black;
+    background-color: rgb(148, 148, 148);
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.btn3{
+    color: black;
+    background-color: rgb(148, 148, 148);
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.btn1:hover{
+    background-color: red;
+
+}
+.btn2:hover{
+    background-color: red;
+
+}
+.btn3:hover{
+    background-color: red;
+}
+.event-f{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+justify-content: center;
+gap: 30px;
+flex-direction: column;
+background-color: #f4efef;
+ margin-bottom: 20px;
+    background: #b8d1da;
+    color: black;
+    width:150vh;
+    padding: 25px;
+    border-radius: 10px;
+    height: 300px;
+}
+.event-f img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: left;
+}
+p{
+    color: black;
+    text-align: left;
+    font-size: 20px;
+}
+.time{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+    text-align: left;
+    
+}
+.button1{
+    color: black;
+    background-color: rgb(38, 255, 0);
+    padding: 25px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    height: 50px;
+}
+.button1:hover{
+    background-color: red;
+    transform: translateX(-10px);
+}
+
+
+    </style>
+</head>
+<body>
+<section class="event">
+    <span class="subtitle">____CHRISMAX</span>
+    <h2>EVENT SCHEDULE</h2>
+    <div>
+        <button class="btn1"><a href="#dec24"></a>DECEMBER 24</button>
+        <button class="btn2"><a href="#dec25"></a>DECEMBER 25</button>
+        <button class="btn3"><a href="#dec26"></a>DECEMBER 26</button>
+    </div>
+    <div id="dec24" class="event-f">
+        <img src="./santa.png" alt="reindeer image" width="600px" height="600px">
+        <div class="event-card">
+        <h3>Reindeer Carriage Rides</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore blanditiis veniam tempore cumque.</p>
+<span class="time">🕑Opening Hours:10:00 am to 3:00 pm</span><br>
+<button class="button1">Book Now</button>
+    </div>
+    </div>
+    <div id="dec24" class="event-f">
+        <img src="./fried-chicken-breast-cheese-tomato-french-fries-ketchup-green-salad-side-view-jpg.jpg" alt="reindeer image" width="600px" height="600px">
+        <div class="event-card">
+        <h3>Christmas Raffle</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore blanditiis veniam tempore cumque.</p>
+<span class="time">🕑Opening Hours:10:00 am to 3:00 pm</p>
+<button class="button1">Book Now</button>
+    </div>
+    </div>
+</section>
+</body>
+</html>
+            
