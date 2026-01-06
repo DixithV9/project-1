@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    
+    * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', sans-serif;
+    }
+    
+    body {
+     background: url("https://images.unsplash.com/photo-1543589077-47d81606c1bf") center/cover no-repeat;
+     height: 100vh;
+    }
+    
+    .navbar {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 18px 60px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background: transparent;
+     z-index: 1000;
+    }
+    
+    .logo {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     color: #fff;
+     font-size: 30px;
+     font-weight: 600;
+    }
+    
+    .logo-icon {
+     font-size: 26px;
+    }
+    
+    .nav-links {
+     list-style: none;
+     display: flex;
+     gap: 30px;
+    }
+    
+    .nav-links a {
+     text-decoration: none;
+     color: #ddd;
+     font-size: 15px;
+     transition: 0.3s;
+    }
+    
+    .nav-links a:hover,
+    .nav-links a.active {
+     color: #ff3b3b;
+    }
+    
+    .nav-actions {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     color: #fff;
+    }
+    
+    .search,
+    .theme {
+     cursor: pointer;
+     font-size: 16px;
+    }
+    
+    .btn {
+     padding: 10px 18px;
+     background: #ff3b3b;
+     color: #fff;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 14px;
+    }
+    
+    .btn:hover {
+        background: #e63232;
+    }
+
+    </style>
+</head>
+<body>
+ 
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">🎄</span>
+      <span class="logo-text">Chrismax</span>
+    </div>
+ 
+    <nav
+      class="nav-links">
+        <a href="#" class="active">Home</a></li>
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Sections</a>
+        <a href="#">Contact</a> 
+    </nav>
+ 
+    <div class="nav-actions">
+       <img class="search" width="25" height="25" src="./magnifying-glass.png" alt="search--v1"/>
+            <button class="btn">Book Now</button>  
+            <img class="moon" width="25" height="25" src="./moon (1).png" alt="moon--v1"/>
+    </div>
+  </header>
+ 
+</body>
+
+</html>
+
+
+
+.about-section{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: gray;
+    min-height: 100vh;
+}
+
+.about-section h1{
+    color: red;
+    font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+
+}
+.about-section p{
+    color:#52525252;
+    width: 600px;
+    height: 150px;
+    margin: 16px 0px 0px;
+    margin-left: 20px;
+    font-size: 18px;
+    word-spacing: 1.5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    
+}
+.about-section h2{
+    color: black;
+    font-size: 50px;
+    margin: 50px;
+    font: 600;
+    font-family: 'Nunito', sans-serif;
+
+}
+.fried-source{
+position: absolute;
+right: 80px;
+top: 40px;
+width:500px;
+height: 500px;
+border-radius: 10px;
+object-fit: contain;
+border-radius: 10px;
+}
+
+.about-button{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    background-color: #ec1944;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 600;
+ 
+
+}
+.about-button:hover{
+    background: linear-gradient(135DEG,#ff4d4d,#ff914d);
+    transform: translateY(-2px);
+}
+
