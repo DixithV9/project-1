@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.event{
+    
+  padding: 100px 80px;
+  background: #fff;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+ 
+}
+.subtitle-1{
+     font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: #ec1944;
+    position: relative;
+}
+.subtitle::before{
+      content: "";
+    border: 0;
+    width: 40px;
+    height: 1px;
+    background:#ec1944;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-right: 10px;
+   
+}
+.event h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
+        font-family: 'Nunito', sans-serif;
+    color: #000;
+}
+.event-tabs{
+    margin-bottom:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.event-tabs a{
+    color: #000;
+    background:#f0f3f2;
+    padding: 15px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    border: 0;
+}
+.event-tabs .btn-1-active{
+    color: #fff;
+    background:#ec1944;
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    border: 0;
+}
+.event-f{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #f0f3f2;
+    flex-wrap: wrap;
+}
+.event-f img{
+    width: 420px;
+    height: 420px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.event-card{
+    max-width: 500px;
+}
+.event-card h3{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 15px;
+    color: #000;
+    
+}
+.event-card p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #525252;
+    font-family: "Nunito", serif;
+    font-weight: 400;
+}
+.event-card .time{
+    display:inline-block;
+    margin: 10px 0px 20px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Nunito", serif;
+    line-height: 28px;
+}
+.button-1{
+    display: inline-block;
+    padding: 14px 28px;
+    color: #fff;
+    background:#1fb66d;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    border: 0;
+
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section class="event">
+    <span class="subtitle-1">CHRISMAX</span>
+    <h2>Event Schedule</h2>
+    <div class="event-tabs">
+     <a class="btn-1-active" href="#dec24">DECEMBER 24</a>
+       <a class="btn-1" href="#dec25">DECEMBER 25</a>
+        <a href="#dec26" class="btn-1">DECEMBER 26</a>
+    </div>
+    <div id="dec24" class="event-f">
+        <img src="./images/eventphoto2.jpg" alt="reindeer image" width="600px" height="600px">
+        <div class="event-card">
+        <h3>Reindeer Carriage Rides</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore blanditiis veniam tempore cumque.</p>
+<span class="time">🕑Opening Hours:10:00 am to 3:00 pm</span>
+<button class="button-1">Book Now</button>
+    </div>
+    </div>
+    <div id="dec24" class="event-f">
+        <img src="./images/eventphoto.jpg" alt="reindeer image" width="600px" height="600px">
+        <div class="event-card">
+        <h3>Christmas Raffle</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore blanditiis veniam tempore cumque.</p>
+<span class="time">🕑Opening Hours:10:00 am to 3:00 pm</p>
+<button class="button-1">Book Now</button>
+    </div>
+    </div>
+</section>
+    
+</body>
+</html>

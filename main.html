@@ -17,7 +17,7 @@
      
     }
     
-    body {
+    body,html {
      height: 100%;
      width: 100%;
      overflow-x: hidden;
@@ -36,8 +36,11 @@
      align-items: center;
      justify-content: space-between;
      background: transparent;
-     z-index:100;
+     z-index:1000;
      overflow: hidden;
+    height: 85px;
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
     }
     
     .logo {
@@ -69,7 +72,7 @@ font-family: 'Nunito', sans-serif;
     
     .nav-links a {
      text-decoration: none;
-     color: #ddd;
+     color: white;
      font-family: 'Nunito', sans-serif;
      font-weight: 700;
      font-size: 17px;
@@ -123,7 +126,8 @@ font-family: 'Nunito', sans-serif;
     color: white;
     background: #ec1944;
     font-size: 17px;
-    padding: 15px 30px;
+    width: 150px;
+    height: 50px;
     border-radius: 10px;
     cursor: pointer;
     line-height: 17px;
@@ -343,44 +347,21 @@ font-family: 'Nunito', sans-serif;
  padding-top: 20px;
  height: auto;
     }
-}
-@media  (max-width: 480px) {
-  .nav-links,.nav-actions {
-    display: none; 
   }
-  .mobile-controls{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
- 
-  .hamburger{
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-
-    
-  }
-  .mobile-moon{
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-  }
-}
-
-
+  
+  
 .santaimage{
- object-fit: contain;
- width: 690px;
- height: auto;
+  object-fit: contain;
+  width: 690px;
+  height: auto;
  }
-
+ 
  .hamburger {
-  display: none;
-  cursor: pointer;
-  font-family: 'Nunito', sans-serif;
-  font-size: 20px;
-  background:#ef1944;
+   display: none;
+   cursor: pointer;
+   font-family: 'Nunito', sans-serif;
+   font-size: 20px;
+   background:#ef1944;
         color: #fff;
         border-radius: 4px;
         padding: 0;
@@ -388,17 +369,17 @@ font-family: 'Nunito', sans-serif;
         height: 34px;
         text-align: center;
         line-height: 34px;
-}
- .mobile-moon{
+      }
+      .mobile-moon{
     display: none;
     filter: invert(1);
     font-size: 20px;
     width: 20px;
     height: 20px;
- }
-
-.mobile-menu {
-  position: fixed;
+  }
+  
+  .mobile-menu {
+    position: fixed;
   inset: 0;
   background: #fff;
   z-index: 100;
@@ -410,32 +391,55 @@ font-family: 'Nunito', sans-serif;
   transform: translateX(100%);
   transition: 0.3s ease;
 }
- 
+
 .mobile-menu.active {
   transform: translateX(0);
 }
 .nav-actions{
-display: flex;
-align-items: center;
-gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 .mobile-actions{
-    display: flex;
+  display: flex;
     flex-direction: column;
     gap: 16px;
-}
-.mobile-controls{
+  }
+  .mobile-controls{
     display: none;
-}
+  }
 
-.mobile-menu a {
-  text-decoration: none;
+  .mobile-menu a {
+    text-decoration: none;
   font-size: 20px;
   color: #fff;
 }
- 
+
 .mobile-menu .active {
   color: #ef1944;
+}
+@media  (max-width: 480px) {
+  .nav-links,.nav-actions {
+  display: none; 
+}
+.mobile-controls{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hamburger{
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+  
+  
+}
+.mobile-moon{
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+}
 }
 @media (max-width: 768px) {
   .nav-links,.nav-actions {
@@ -460,6 +464,638 @@ gap: 16px;
     cursor: pointer;
   }
 }
+.about-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 80px;
+  padding: 80px 100px;
+  width: 100%;
+  background: #fff;
+}
+.about-container{
+    flex: 1;
+    max-width: 520px;
+}
+.about-container .tag{
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    display: inline-block;
+    line-height: 22px;
+    color:#ec1944;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    padding-left: 65px;
+    margin-bottom: 10px;
+  }
+  .about-container .tag::before{
+       content: "";
+    width: 50px;
+    height: 1px;
+    background:#ec1944;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-right: 10px;
+
+  }
+  
+.about-container h3{
+  font-size: 40px;
+  font-weight:700;
+  margin-bottom: 15px;
+    line-height: 50px;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    
+    
+  }
+  .about-container p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 20px;
+    max-width: 600px; 
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .about-button{
+    color: white;
+    background:#ec1944;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    height: 50px;
+    font-family: 'Nunito', sans-serif;
+    width: 150px;
+    font-weight: 600;
+    border: none;
+    margin-top: 25px;
+  }
+  .about-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+.about-image img{
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+  }
+@media (max-width:768px) {
+  .about-section{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding:20px 16px;
+   margin: 0;
+   gap: 24px;
+  }
+  .about-container{
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .about-container .tag{
+    padding-left: 36px;
+    font-size: 12px;
+  }
+  .about-container h3{
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 10px;
+  }
+  .about-container p{
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .about-button{
+    align-self: flex-start;
+      margin-top: 50px;
+      padding: 18px 32px;
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 30px;
+  }
+  .about-image{
+    max-width: 100%; 
+  }
+  .about-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+  }
+}
+@media (max-width:480px) {
+  .about-section{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding:20px 16px;
+   margin: 0;
+   gap: 24px;
+  }
+  .about-container{
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .about-container .tag{
+    padding-left: 36px;
+    font-size: 12px;
+  }
+  .about-container h3{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .about-container p{
+    font-size: 17px;
+    line-height: 27px;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .about-button{
+    align-self: flex-start;
+      margin-top: 20px;
+      padding: 14px 20px;
+      font-size: 16px;
+      width: fit-content;
+      line-height: 16px;
+      
+  }
+  .about-image{
+    max-width: 100%; 
+  }
+  .about-image img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+  }
+}
+.event-container{
+  width: 100%;
+  padding: 110px 20px;
+  background: #f2f8f7;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+
+}
+.event-wrapper{
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.event-container .content{
+  text-align: center;
+}
+.event-container h3{
+  font-size: 56px;
+  font-weight:700;
+    line-height: 70px;
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+}
+.subtitle{
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  font-family: 'Nunito', sans-serif;
+  color: #525252;
+}
+.countdown{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  }
+  .time-box{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .time-box h4{
+    font-size: 60px;
+    font-weight: 700;
+    color: #ec1944;
+    margin:10px 10px 4px 10px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .time-box span{
+    font-size: 18px;
+    color: #000;
+    line-height: 1.2;
+    margin-top: 30px;
+     font-family: 'Nunito', sans-serif;
+     font-weight: 600;
+  }
+  @media (max-width:768px){
+    .event-container{
+      width: 100%;
+      padding: 60px 30px;
+      background: #f2f8f7;
+    }
+    .content{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .time-box h4{
+      font-size: 60px;
+      line-height: 1;
+      color: #ec1944;
+      font-weight: 700;
+    }
+    .event-container h3{
+      font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    width: 100%;
+    margin:0px 10px 0px 0px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    }
+    .subtitle{
+  font-size:16px;
+  font-weight: 400;
+  line-height: 1;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: #525252;
+    }
+    .time-box span{
+      font-size: 18px;
+      color: #000;    
+      font-weight: 600; 
+      margin-top: 20px;
+    }
+    .countdown{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 50px;
+      
+    }
+    .time-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+  }
+  @media (max-width:480px){
+    .event-container{
+      width: 100%;
+      padding: 60px 30px;
+      background: #f2f8f7;
+    }
+    .content{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .time-box h4{
+      font-size: 30px;
+      line-height: 1;
+      color: #ec1944;
+      font-weight: 700;
+      margin-top: 20px;
+      
+    }
+    .event-container h3{
+      font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    width: 100%;
+    margin:10px 10px 0px 0px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.2;
+    }
+    .subtitle{
+  font-size:14px;
+  font-weight: 400;
+  line-height: 1;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: #525252;
+    }
+    .time-box span{
+      font-size: 16px;
+      color: #000;    
+      font-weight: 600; 
+      margin-top: 20px;
+    }
+    .countdown{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 18px;
+      
+    }
+    .time-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+  }
+  @media (max-width:375px){
+    .event-container{
+      width: 100%;
+      padding: 60px 10px;
+      background: #f2f8f7;
+    }
+    .content{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .time-box h4{
+      font-size: 30px;
+      line-height: 1;
+      color: #ec1944;
+      font-weight: 700;
+      margin-top: 20px;
+      
+    }
+    .event-container h3{
+      font-size: 26px;
+    font-weight: 700;
+    color: #000;
+    width: 100%;
+    margin:10px 10px 0px 0px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1;
+    }
+    .subtitle{
+  font-size:16px;
+  font-weight: 400;
+  line-height: 1;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: #525252;
+    }
+    .time-box span{
+      font-size: 14px;
+      color: #000;    
+      font-weight: 600; 
+      margin-top: 20px;
+    }
+    .countdown{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 18px;
+      
+    }
+    .time-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+  }
+
+.event-poster{
+  padding: 80px 120px;
+  background: #fff;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.event-poster .subtitle-1{
+     font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    align-items: center;
+    gap: 12px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: #ec1944;
+}
+.subtitle-1::before{
+      content: "";
+    width: 40px;
+    height: 1px;
+    background:#ec1944;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-right: 10px;
+   
+}
+.event-poster h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    margin:10px 0px 0px 20px;
+        font-family: 'Nunito', sans-serif;
+    color: #000;
+}
+.event-tabs{
+  display: block;
+    margin:50px 0px 0px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.event-tabs1{
+  display: none;
+}
+.event-tabs a{
+    color: #000;
+    background:#f0f3f2;
+    padding: 16px  30px;
+    width: 200px;
+    text-decoration: none;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    list-style: none;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+.event-tabs .btn-1-active{
+    color: #fff;
+    background:#ec1944;
+    padding: 16px  30px;
+    width: 200px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    list-style: none;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 40px;
+
+}
+.event-f{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-radius: 10px;
+    margin:0 auto 30px;
+    height:auto;
+    padding: 30px;
+    background: #f0f3f2;
+    width: 100%;
+    max-width: 1100px;
+  position: relative;
+}
+
+.event-f .image2{
+   width: 300px;
+   height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left:0px;
+    flex-shrink: 0;
+}
+.event-card{
+    max-width: 520px;
+    flex: 1;
+    gap: 12px;
+}
+.event-card h3{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 8px;
+    font-family: "Nunito", serif;
+    color: #000;
+    
+}
+.event-card p{
+  
+    font-size: 18px;
+    line-height: 1.6;
+    color: #525252;
+    font-family: "Nunito", serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.event-card .time{
+  display: block;
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Nunito", serif;
+    line-height: 28px;
+}
+.button-1{
+    padding: 14px 32px;
+    color: #fff;
+    background:#1fb66d;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    border: 0;
+    width: fit-content;
+    position: absolute;
+    right:30px;
+    bottom: 80px;
+}
+@media (max-width:768px){
+  .event-poster{
+    padding: 60px 40px;
+  }
+  .event-tabs{
+    display: none;
+    margin: 40px 0 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  .event-tabs a,.event-tabs .btn-1-active{
+    width: 180px;
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+  .event-f{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 70px 20px 30px;
+    gap: 20px;
+  }
+  
+  .event-tabs1,.btn-1-active{
+    width: 100%;
+    height: 48px;
+    background: #ec1944;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+  }
+  .event-f .image2{
+    width: 100%;
+    height:100%;
+    margin-left: 0;
+    
+  }
+  .event-card{
+    max-width: 100%;
+    width: 100%;
+  }
+  .event-card h3{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .event-card p{
+    font-size: 18px;
+    margin:20px 0px;
+  }
+  .event-card  .time{
+    font-size: 16px;
+    margin: 12px 0px;
+  }
+  .button-1{
+    align-self: center;
+    justify-content: center;
+    margin-top: 40px;
+    position: absolute;
+    
+  }
+}
+
+
+
 </style>
 </head>
 <body>
@@ -469,7 +1105,7 @@ gap: 16px;
       <img src="images/cap.png" alt="cap"class="cap">
       <span class="logo-text">Chrismax</span>
     </div>
- 
+    
     <nav
       class="nav-links">
         <a href="#" class="active">Home</a></li>
@@ -521,19 +1157,77 @@ gap: 16px;
   </div>
 </div>
             </section>
-            
-            
+            <section class="about-section">
+        <div class="about-container">
+        <span class="tag">Holly day special</span>
+        <h3>About Our Event</h3>
+        <p>Join us to celebrate the biggest event for the whole family this December!</p>
+        <P>We have prepared a variety of entertaining activities for kids and adults to provide an unforgettable experience of celebrating Christmas the way you want it.</p>
+            <button class="about-button">Shop now</button>
+        </div>
+        <div class="about-image">
+        <img src="images/fried-chicken-breast-cheese-tomato-french-fries-ketchup-green-salad-side-view-jpg.jpg" alt="Fried chicken">
+        </div>
+        </section>
+         <section class="event-container">
+           <div class="event-wrapper">
+             <div class="content">
+             <h3>Christmas Event for the Whole Family</h3>
+             <p class="subtitle">Step into a magical world of holiday cheer!</p>
+             </div>
+      <div class="countdown">
+        <div class="time-box">
+                <h4>-13</h4>
+                <span>Days</span>
+              </div>
+              <div class="time-box">
+                <h4>-12</h4>
+                <span>Hours</span>
+              </div>
+                <div class="time-box">
+                    <h4>-13</h4>
+                    <span>Minutes</span>
+                  </div>
+                <div class="time-box">
+                    <h4>-14</h4>
+                    <span>seconds</span>
+                  </div>
+                </div>
+                </div>
+              </div>
+</section>
+<section class="event-poster">
+    <span class="subtitle-1">CHRISMAX</span>
+    <h2>Event Schedule</h2>
+    <div class="event-tabs">
+     <a class="btn-1-active" href="#dec24">December 24</a>
+       <a class="btn-11" href="#dec25">December 25</a>
+        <a href="#dec26" class="btn-12">December 26</a>
+    </div>
+    <div class="event-tabs1">
+     <a class="btn-1-active" href="#dec24">December 24</a>
+       <a class="btn-1" href="#dec25">December 25</a>
+        <a href="#dec26" class="btn-1">December 26</a>
+    </div>
+    <div id="dec24" class="event-f">
+      
+        <img  class="image2" src="./images/eventphoto.jpg" alt="reindeer image" width="600px" height="600px">
+        <div class="event-card">
+        <h3>Reindeer Carriage Rides</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore blanditiis veniam tempore cumque.</p>
+<span class="time">🕑Opening Hours:10:00 am to 3:00 pm</span>
+<button class="button-1">Book Now</button>
+    </div>
+    </div>
+    <div id="dec24" class="event-f">
+        <img class="image2" src="./images/eventphoto2.jpg" alt="reindeer image" width="600px" height="600px">
+        <div class="event-card">
+        <h3>Christmas Raffle</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore blanditiis veniam tempore cumque.</p>
+<span class="time">🕑Opening Hours:10:00 am to 3:00 pm</p>
+<button class="button-1">Book Now</button>
+    </div>
+    </div>
+</section>
     </body>
     </html>
-    <!-- <section class="about-section"
-<div class="about-container">
-<h1>_____Holly day special</h1>
-<h2>About Our Event</h2>
-<p>Join us to celebrate the biggest event for the whole family this December!<br>
-
-We have prepared a variety of entertaining activities for kids and<br> adults to provide an unforgettable experience of celebrating Christmas the way you want it.</p>
-<img src="images/fried-chicken-breast-cheese-tomato-french-fries-ketchup-green-salad-side-view-jpg.jpg" alt="Fried chicken" width="300px" height="300px" class="fried-source">
-<button class="about-button">Shop now</button>
-</div>
-
-</section> -->
